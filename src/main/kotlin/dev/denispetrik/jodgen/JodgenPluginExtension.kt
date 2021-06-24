@@ -18,8 +18,8 @@ abstract class JodgenPluginExtension {
     abstract val output: Output
 
     fun setConventions(layout: ProjectLayout) {
-        input.dir.convention(layout.projectDirectory.dir("src/main/resources/db"))
-        output.dir.convention(layout.buildDirectory.dir("generated"))
+        input.dir.convention(layout.projectDirectory.dir("src/main/resources/db/migration"))
+        output.dir.convention(layout.buildDirectory.dir("generated/jooq"))
     }
 
     fun input(action: Action<Input>) {

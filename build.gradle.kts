@@ -31,7 +31,7 @@ publishing {
 }
 
 group = "dev.denispetrik"
-version = "0.1.0"
+version = "0.1.1"
 
 dependencies {
     implementation(kotlin("stdlib"))
